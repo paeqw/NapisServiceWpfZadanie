@@ -25,11 +25,8 @@
             {
                 wyjscie[a.Length - 1 - i] = a[i];
             }
-            String aa = "";
-            foreach (var el in wyjscie) {
-                if (el != ' ') aa += el.ToString();
-            }
-            return aa;
+            String aa = new string(wyjscie);
+            return remoSpaces(aa);
         }
 
         public bool CzyPalindrom()
